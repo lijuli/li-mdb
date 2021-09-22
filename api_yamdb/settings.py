@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'  # os.environ['SECRET_KEY']
 
-DEBUG = False  # os.environ['DEBUG'] fails on tests
+DEBUG = True  # os.environ['DEBUG'] fails on tests
 
 ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS', default=[]))
 
