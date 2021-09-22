@@ -95,11 +95,11 @@ class CommentViewSet(viewsets.ModelViewSet):
     pagination_class = PageNumberPagination
 
     def get_queryset(self):
-        queryset = Comment.objects.all()
+        # queryset = Comment.objects.all()
         review = self.kwargs.get('review_id')
         if Review.objects.filter(id=review).exists():
             return Comment.objects.filter(review=review)
-        return queryset
+        return Comment.objects.all()
 
     def perform_create(self, serializer):
         review = get_object_or_404(Review, id=self.kwargs.get('review_id'))
