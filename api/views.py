@@ -98,7 +98,7 @@ class CommentViewSet(viewsets.ModelViewSet):
         queryset = Comment.objects.all()
         review = self.kwargs.get('review_id')
         if Review.objects.filter(id=review).exists():
-            queryset = Comment.objects.filter(review=review)
+            return Comment.objects.filter(review=review)
         return queryset
 
     def perform_create(self, serializer):
