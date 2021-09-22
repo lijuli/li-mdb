@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from api.models.title import Title
 from api.models.category import Category
+from api.models.comment import Comment
 from api.models.genre import Genre
 from api.models.review import Review
-from api.models.comment import Comment
+from api.models.title import Title
 
 
 @admin.register(Title)

@@ -1,4 +1,5 @@
 from textwrap import shorten
+
 from django.db import models
 
 from api.models.review import Review
