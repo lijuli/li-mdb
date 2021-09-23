@@ -24,3 +24,13 @@ Now you are all set and can run the project!\
 * Django REST Framework
 * Simple JWT
 
+### API:
+API documentation: \
+http://62.84.121.9/redoc/
+
+Admin: \
+http://62.84.121.9/admin/
+
+Access resources:\
+http://62.84.121.9/api/v1/auth/email/ - get confirmation_code \
+http://62.84.121.9/api/v1/auth/token/ - get token 
