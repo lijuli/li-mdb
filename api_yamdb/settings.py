@@ -12,7 +12,7 @@ SECRET_KEY = os.environ['SECRET_KEY']  # '385148kslhtyn^##a1)ilz@4zqj=rq&agdol^#
 
 DEBUG = True  # os.environ['DEBUG'] fails on tests
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'web').split(',')  # tuple(env.list('ALLOWED_HOSTS', default=[]))
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')  # tuple(env.list('ALLOWED_HOSTS', default=[]))
 
 
 INSTALLED_APPS = [
