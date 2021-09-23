@@ -8,7 +8,7 @@ environ.Env.read_env()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = '385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'  # os.environ['SECRET_KEY']
+SECRET_KEY = os.environ['SECRET_KEY'] # '385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
 DEBUG = True  # os.environ['DEBUG'] fails on tests
 
