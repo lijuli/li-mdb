@@ -1,5 +1,6 @@
 from textwrap import shorten
 
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 from api.models.title import Title
@@ -26,6 +27,14 @@ class Review(models.Model):
     )
     score = models.PositiveSmallIntegerField(
         'review score',
+        validators=[
+            MinValueValidator(
+                limit_value=1,
+                message='Review score cannot be less than 1.'),
+            MaxValueValidator(
+                limit_value=10,
+                message='Review score cannot be greater than 10.')
+        ],
         help_text='enter your review score'
     )
     pub_date = models.DateTimeField(
