@@ -1,6 +1,6 @@
 ![example workflow](https://github.com/lijuli/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-Welcome to the api_yamdb wiki!
+Welcome to the api_yamdb wiki dev branch!
 
 ### Usage
 
@@ -34,3 +34,4 @@ http://62.84.121.9/admin/
 Access resources:\
 http://62.84.121.9/api/v1/auth/email/ - get confirmation_code \
 http://62.84.121.9/api/v1/auth/token/ - get token 
+
