@@ -26,11 +26,11 @@ Now you are all set and can run the project!\
 
 ### API:
 API documentation: \
-http://62.84.121.9/redoc/
+http://localhost/redoc/
 
 Admin: \
-http://62.84.121.9/admin/
+http://localhost/admin/
 
 Access resources:\
-http://62.84.121.9/api/v1/auth/email/ - get confirmation_code \
-http://62.84.121.9/api/v1/auth/token/ - get token 
+http://localhost/api/v1/auth/email/ - get confirmation_code \
+http://localhost/api/v1/auth/token/ - get token 
