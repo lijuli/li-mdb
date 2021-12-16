@@ -1,6 +1,7 @@
 ![example workflow](https://github.com/lijuli/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-Welcome to the api_yamdb wiki!
+Welcome to the li-mdb wiki!
+This is an API for movie reviews.
 
 ### Usage
 
